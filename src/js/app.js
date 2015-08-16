@@ -1,4 +1,4 @@
-var app = angular.module('appName', [
+var app = angular.module('julia', [
         'ui.router',
         'ngTouch'
     ]);
@@ -16,6 +16,13 @@ app.config(['$stateProvider',
                 templateUrl: './views/home.html',
                 data: {
                     pageTitle: 'Title'
+                }
+            })
+            .state('about', {
+                url: '/about',
+                templateUrl: './views/about.html',
+                data: {
+                    pageTitle: 'About'
                 }
             });
     }
