@@ -3,29 +3,13 @@ var app = angular.module('julia', [
         'ngTouch'
     ]);
 
-app.run(['$rootScope',
+app.run([
+    '$rootScope',
     '$state',
-    '$location',
-    '$window',
-    function ($rootScope, $state, $location, $window) {
+    '$stateParams',
+    function ($rootScope, $state, $stateParams) {
         $rootScope.$state = $state;
-
-        // Get Page Title on successful page change
-        $rootScope.$on('$stateChangeSuccess', function (event, toState) {
-            // Sets HTML/Page Title
-            $rootScope.currentPage = toState.name;
-
-            if (toState.data && toState.data.pageTitle) {
-                $rootScope.pageTitle = toState.data.pageTitle;
-            } else {
-                $rootScope.pageTitle = 'Julia Sun';
-            }
-        });
-
-        // Scroll to top of page on page change
-        $rootScope.$on('$viewContentLoaded', function() {
-            document.body.scrollTop = document.documentElement.scrollTop = 0;
-        });
+        $rootScope.$stateParams = $stateParams;
     }
 ]);
 
