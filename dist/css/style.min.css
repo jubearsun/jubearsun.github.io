@@ -457,6 +457,8 @@ td, th {
 ========================================================================== */
 /* Vertical Align
 ========================================================================== */
+/* Horizontal Align
+========================================================================== */
 /* Border Radius
 ========================================================================== */
 /* Clearfix
@@ -470,13 +472,36 @@ td, th {
   z-index: 1; }
 
 html {
+  height: 100%;
   position: relative;
   height: 100%;
   z-index: 1; }
 
 body {
+  height: 100%;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
+
+.banner {
+  background-color: #03A9F4;
+  height: 100px;
+  text-align: center; }
+  .banner .title {
+    margin-left: auto;
+    margin-right: auto; }
+
+.content {
+  min-height: 100%;
+  position: relative;
+  vertical-align: baseline;
+  margin-bottom: -160px; }
+
+.footer {
+  position: relative;
+  vertical-align: baseline;
+  height: 60px;
+  background-color: #03A9F4; }
 
 
 /*# sourceMappingURL=style.min.css.map */
