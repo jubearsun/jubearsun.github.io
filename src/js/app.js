@@ -24,6 +24,13 @@ app.config(['$stateProvider',
                 data: {
                     pageTitle: 'About'
                 }
+            })
+            .state('projects', {
+                url: '/projects',
+                templateUrl: './views/projects.html',
+                data: {
+                    pageTitle: 'Projects'
+                }
             });
     }
 ]);
