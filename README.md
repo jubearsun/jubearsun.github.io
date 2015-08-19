@@ -1,7 +1,5 @@
 # Website Concept for juliasun.io
 
-### Written in Angular.js
-
 #### Credits:
 
 Materialize CSS - [http://materializecss.com/](http://materializecss.com/)
