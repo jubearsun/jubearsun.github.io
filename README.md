@@ -1,5 +1,9 @@
-# Website Concept
+# Website Concept for juliasun.io
 
-## I'm rebuilding my website! ^_^
+Written in Angular.js
 
-### Please don't check out my old website because it's outdated and lame.  Thanks!
+#### Credits:
+
+Materialize CSS - [http://materializecss.com/](http://materializecss.com/)
+
+Angular Boilerplate by Christian Le - [https://github.com/cle1994/boilerplate-angular](https://github.com/cle1994/boilerplate-angular)

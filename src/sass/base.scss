@@ -21,7 +21,6 @@ body {
     height: 100%;
     position: relative;
     z-index: 1;
-    overflow: hidden;
 }
 
 
@@ -47,6 +46,7 @@ body {
 }
 
 .navigation {
+    padding: 10px;
     text-align: center;
     div {
         display: inline-block;
@@ -84,6 +84,9 @@ body {
     position: relative;
     vertical-align: baseline;
     height: 80px;
+    a {
+        padding: 0 2 0 2;
+    }
     .icons {
         @include vertical-align();
         .fa-circle {
