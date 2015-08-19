@@ -21,6 +21,7 @@ body {
     height: 100%;
     position: relative;
     z-index: 1;
+    font-family: 'Roboto';
 }
 
 
@@ -46,7 +47,7 @@ body {
 }
 
 .navigation {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     div {
         display: inline-block;
@@ -63,7 +64,7 @@ body {
         transition: color 500ms ease;
         &:hover {
             color: $black;
-            transform:rotate(-180deg);
+            transform: rotate(-180deg);
             direction: rtl;
             unicode-bidi: bidi-override;
         }
@@ -71,14 +72,19 @@ body {
 }
 
 .content {
-    padding: 10px;
-    // min-height: 100%;
+    width: 100%;
+    padding: 50px;
     position: relative;
     vertical-align: baseline;
-    // margin-bottom: -160px;
+}
+
+.page-container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .footer {
+    clear: both;
     text-align: center;
     background-color: #9fa8da;
     position: relative;

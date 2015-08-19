@@ -1,3 +1,17 @@
-<div class="about-page" ng-controller="aboutctrl">
-    About Page
+<div class="page-container" ng-controller="aboutctrl">
+    <div class="about-me" ng-repeat="description in descriptions track by $index">
+        <img src="{{ description.photo }}" class="image responsive-img z-depth-1" id="photo">
+        <div class="description">
+            <h4 class="heading">
+                {{ description.title }}
+            </h4>
+            <h5>
+                {{ description.subtitle }}
+            </h5>
+            <div class="blurb flow-text">
+                {{ description.blurb }}
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis unde architecto quia molestiae nobis et illum, omnis! Maiores amet a veniam numquam quos iste repellat harum, illum accusamus consectetur!
+            </div>
+        </div>
+    </div>
 </div>

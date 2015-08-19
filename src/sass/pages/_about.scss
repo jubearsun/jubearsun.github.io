@@ -1,0 +1,27 @@
+// About page specific styles.
+
+.about-me {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    #photo {
+        width: 200px;
+        float: left;
+        margin-bottom: 50px;
+        z-index: 2;
+    }
+    .image {
+        border-radius: 10px;
+        border: 5px solid #e8eaf6;
+    }
+    .description {
+        margin-left: 100px;
+        padding-left: 200px;
+        .heading {
+            font-family: 'Roboto Slab';
+        }
+        .blurb {
+            font-size: 16px;
+        }
+    }
+}
