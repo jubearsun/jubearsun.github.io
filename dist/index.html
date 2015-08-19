@@ -13,9 +13,6 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 
-        <!-- Materialize JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-
         <!-- LIBRARIES -->
         <script src="./libs/js/angular.min.js"></script>
         <script src="./libs/js/angular-touch.min.js"></script>
@@ -32,7 +29,18 @@
                 Software Engineer | Poro Enthusiast
             </div>
         </div>
+        <div class="navigation">
+            <div class="link ng-click-active" ui-sref="home">Home</div>
+            <div class="link ng-click-active" ui-sref="about">About</div>
+            <div class="link ng-click-active" ui-sref="projects">Projects</div>
+        </div>
         <div class="content" data-ui-view></div>
         <div class="footer"></div>
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <!-- Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
     </body>
 </html>
