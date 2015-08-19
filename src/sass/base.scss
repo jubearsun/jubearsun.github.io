@@ -52,6 +52,7 @@ body {
         display: inline-block;
     }
     .link {
+        width: 150px;
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 300;
@@ -59,9 +60,12 @@ body {
         padding: 10 30 10 30;
         letter-spacing: 2px;
         color: #b0bec5;
-        transition: all 500ms ease;
+        transition: color 500ms ease;
         &:hover {
             color: $black;
+            transform:rotate(-180deg);
+            direction: rtl;
+            unicode-bidi: bidi-override;
         }
     }
 }
@@ -75,10 +79,42 @@ body {
 }
 
 .footer {
+    text-align: center;
     background-color: #9fa8da;
     position: relative;
     vertical-align: baseline;
-    height: 60px;
+    height: 80px;
+    .icons {
+        @include vertical-align();
+        .fa-circle {
+            color: #b0bec5;
+            transition: all 300ms ease;
+        }
+        #github:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #000;
+            }
+        }
+        #linkedin:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #007bb6;
+            }
+        }
+        #twitter:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #00aced;
+            }
+        }
+        #envelope:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #00cc00;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -92,9 +128,15 @@ body {
     }
     .navigation {
         .link {
+            width: auto;
             font-size: 14px;
             padding: 10px;
             letter-spacing: 1px;
+        }
+    }
+    .footer {
+        .icons {
+            font-size: 11px;
         }
     }
 }
