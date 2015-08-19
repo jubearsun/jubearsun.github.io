@@ -484,13 +484,22 @@ body {
   overflow: hidden; }
 
 .banner {
-  background-color: #03A9F4;
+  background-color: #9fa8da;
   height: 100px;
-  text-align: center;
-  cursor: pointer; }
+  text-align: center; }
   .banner .title {
+    color: #FFFFFF;
+    padding: 10 0 5 0;
+    font-size: 28px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    letter-spacing: 1px;
     margin-left: auto;
     margin-right: auto; }
+  .banner .subtitle {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Roboto Slab'; }
 
 .navigation {
   text-align: center; }
@@ -515,10 +524,20 @@ body {
   vertical-align: baseline; }
 
 .footer {
+  background-color: #9fa8da;
   position: relative;
   vertical-align: baseline;
-  height: 60px;
-  background-color: #03A9F4; }
+  height: 60px; }
+
+@media screen and (max-width: 480px) {
+  .banner .title {
+    font-size: 24px; }
+  .banner .subtitle {
+    font-size: 14px; }
+  .navigation .link {
+    font-size: 14px;
+    padding: 10px;
+    letter-spacing: 1px; } }
 
 
 /*# sourceMappingURL=style.min.css.map */

@@ -39,7 +39,7 @@ app.config(['$stateProvider',
                 url: '/projects',
                 templateUrl: './views/projects.html',
                 data: {
-                    pageTitle: 'Juila | Projects'
+                    pageTitle: 'Julia | Projects'
                 }
             });
     }
