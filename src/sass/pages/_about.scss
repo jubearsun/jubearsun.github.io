@@ -2,17 +2,15 @@
 
 .about-me {
     clear: both;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
-    #photo {
-        width: 200px;
-        float: left;
-        margin-bottom: 50px;
-        z-index: 2;
-    }
     .image {
         border-radius: 10px;
         border: 5px solid #e8eaf6;
+        width: 180px;
+        float: left;
+        margin-bottom: 50px;
+        z-index: 2;
     }
     .description {
         margin-left: 100px;
@@ -22,6 +20,48 @@
         }
         .blurb {
             font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .about-me {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 804px) {
+    .description {
+        .heading {
+            font-size: 24px;
+        }
+        .subheading {
+            font-size: 18px;
+        }
+        .blurb {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .about-me {
+        margin-bottom: 20px;
+        .image {
+            width: 100px;
+        }
+        .description {
+            padding-left: 50px;
+            .heading {
+                font-size: 18px;
+            }
+            .subheading {
+                font-size: 16px;
+            }
+            .blurb {
+                font-size: 13px;
+            }
         }
     }
 }

@@ -586,16 +586,15 @@ body {
 
 .about-me {
   clear: both;
-  width: 80%;
+  width: 75%;
   margin: 0 auto; }
-  .about-me #photo {
-    width: 200px;
+  .about-me .image {
+    border-radius: 10px;
+    border: 5px solid #e8eaf6;
+    width: 180px;
     float: left;
     margin-bottom: 50px;
     z-index: 2; }
-  .about-me .image {
-    border-radius: 10px;
-    border: 5px solid #e8eaf6; }
   .about-me .description {
     margin-left: 100px;
     padding-left: 200px; }
@@ -603,6 +602,32 @@ body {
       font-family: 'Roboto Slab'; }
     .about-me .description .blurb {
       font-size: 16px; }
+
+@media screen and (max-width: 1030px) {
+  .about-me {
+    width: 100%; } }
+
+@media screen and (max-width: 804px) {
+  .description .heading {
+    font-size: 24px; }
+  .description .subheading {
+    font-size: 18px; }
+  .description .blurb {
+    font-size: 14px; } }
+
+@media screen and (max-width: 699px) {
+  .about-me {
+    margin-bottom: 20px; }
+    .about-me .image {
+      width: 100px; }
+    .about-me .description {
+      padding-left: 50px; }
+      .about-me .description .heading {
+        font-size: 18px; }
+      .about-me .description .subheading {
+        font-size: 16px; }
+      .about-me .description .blurb {
+        font-size: 13px; } }
 
 
 /*# sourceMappingURL=style.min.css.map */
