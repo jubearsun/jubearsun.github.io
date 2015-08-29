@@ -16,8 +16,8 @@ app.controller('aboutctrl', ['$scope', function($scope) {
             title: 'Class of 2017',
             subtitle: 'University of California, Berkeley',
             photo: '../assets/img/about/campanile.jpg',
-            blurb: "I am currently a third year Computer Science major \
-                    at UC Berkeley."
+            blurb: 'I am currently a third year Computer Science major \
+                    at UC Berkeley.'
         },
         {
             title: 'Engineering Practicum Intern',

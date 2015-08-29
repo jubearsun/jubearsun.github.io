@@ -1,1 +1,12 @@
+// Home
 
+.landing-title {
+    @include vertical-align();
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    color: $black;
+    letter-spacing: 2px;
+}
