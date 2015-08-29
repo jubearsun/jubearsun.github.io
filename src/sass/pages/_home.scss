@@ -8,14 +8,19 @@
     @include vertical-align();
     text-align: center;
     .landing-title {
+        font-family: 'Pacifico';
         width: 100%;
         margin: 10 auto;
         font-weight: 500;
         color: #b0bec5;
-        letter-spacing: 1px;
-        line-height: 80px;
-        font-size: 60px;
+        line-height: 100px;
+        font-size: 90px;
         text-align: center;
+        transition: font-size 200ms ease;
+        &:hover {
+            font-family: 'Roboto';
+            font-size: 70px;
+        }
     }
     .icons {
         width: 100%;
@@ -84,6 +89,15 @@
 }
 
 @media (max-width: 480px) {
+    .title-container {
+        .landing-title {
+            line-height: 90px;
+            font-size: 80px;
+            &:hover {
+                font-size: 60px;
+            }
+        }
+    }
     .navigation-container {
         .navigation {
             width: 200px;
