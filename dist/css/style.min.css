@@ -486,6 +486,9 @@ body {
 .page-container {
   height: 100%; }
 
+.home-page {
+  overflow: hidden; }
+
 .title-container {
   position: relative;
   top: 50%;
@@ -495,9 +498,9 @@ body {
   text-align: center; }
   .title-container .landing-title {
     width: 100%;
-    margin: 0 auto;
+    margin: 10 auto;
     font-weight: 500;
-    color: #333333;
+    color: #b0bec5;
     letter-spacing: 1px;
     line-height: 80px;
     font-size: 60px;
@@ -559,6 +562,10 @@ body {
         float: left; }
       .navigation-container .navigation .link.right {
         float: right; }
+
+@media (max-width: 480px) {
+  .navigation-container .navigation {
+    width: 200px; } }
 
 .about-me {
   clear: both;
