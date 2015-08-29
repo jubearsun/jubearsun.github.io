@@ -486,20 +486,44 @@ body {
 .page-container {
   height: 100%; }
 
-.landing-title {
+.home-page {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 500;
-  color: #333333;
-  letter-spacing: 1px;
-  line-height: 80px;
-  font-size: 60px; }
+  text-align: center; }
+  .home-page .landing-title {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 500;
+    color: #333333;
+    letter-spacing: 1px;
+    line-height: 80px;
+    font-size: 60px; }
+  .home-page .icons {
+    width: 50%;
+    margin: 0 auto; }
+    .home-page .icons .fa-circle {
+      color: #b0bec5;
+      -webkit-transition: all 300ms ease;
+              transition: all 300ms ease; }
+    .home-page .icons #github:hover {
+      cursor: pointer; }
+      .home-page .icons #github:hover .fa-circle {
+        color: #000; }
+    .home-page .icons #linkedin:hover {
+      cursor: pointer; }
+      .home-page .icons #linkedin:hover .fa-circle {
+        color: #007bb6; }
+    .home-page .icons #twitter:hover {
+      cursor: pointer; }
+      .home-page .icons #twitter:hover .fa-circle {
+        color: #00aced; }
+    .home-page .icons #envelope:hover {
+      cursor: pointer; }
+      .home-page .icons #envelope:hover .fa-circle {
+        color: #00cc00; }
 
 .about-me {
   clear: both;

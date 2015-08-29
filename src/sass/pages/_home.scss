@@ -1,13 +1,48 @@
 // Home
 
-.landing-title {
+
+.home-page {
     @include vertical-align();
-    width: 50%;
-    margin: 0 auto;
     text-align: center;
-    font-weight: 500;
-    color: $black;
-    letter-spacing: 1px;
-    line-height: 80px;
-    font-size: 60px;
+    .landing-title {
+        width: 50%;
+        margin: 0 auto;
+        font-weight: 500;
+        color: $black;
+        letter-spacing: 1px;
+        line-height: 80px;
+        font-size: 60px;
+    }
+    .icons {
+        width: 50%;
+        margin: 0 auto;
+        .fa-circle {
+            color: #b0bec5;
+            transition: all 300ms ease;
+        }
+        #github:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #000;
+            }
+        }
+        #linkedin:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #007bb6;
+            }
+        }
+        #twitter:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #00aced;
+            }
+        }
+        #envelope:hover {
+            cursor: pointer;
+            .fa-circle {
+                color: #00cc00;
+            }
+        }
+    }
 }
