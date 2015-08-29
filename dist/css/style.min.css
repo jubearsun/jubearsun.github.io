@@ -486,44 +486,79 @@ body {
 .page-container {
   height: 100%; }
 
-.home-page {
+.title-container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   text-align: center; }
-  .home-page .landing-title {
-    width: 50%;
+  .title-container .landing-title {
+    width: 100%;
     margin: 0 auto;
     font-weight: 500;
     color: #333333;
     letter-spacing: 1px;
     line-height: 80px;
-    font-size: 60px; }
-  .home-page .icons {
-    width: 50%;
+    font-size: 60px;
+    text-align: center; }
+  .title-container .icons {
+    width: 100%;
     margin: 0 auto; }
-    .home-page .icons .fa-circle {
+    .title-container .icons .fa-circle {
       color: #b0bec5;
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease; }
-    .home-page .icons #github:hover {
+    .title-container .icons #github:hover {
       cursor: pointer; }
-      .home-page .icons #github:hover .fa-circle {
+      .title-container .icons #github:hover .fa-circle {
         color: #000; }
-    .home-page .icons #linkedin:hover {
+    .title-container .icons #linkedin:hover {
       cursor: pointer; }
-      .home-page .icons #linkedin:hover .fa-circle {
+      .title-container .icons #linkedin:hover .fa-circle {
         color: #007bb6; }
-    .home-page .icons #twitter:hover {
+    .title-container .icons #twitter:hover {
       cursor: pointer; }
-      .home-page .icons #twitter:hover .fa-circle {
+      .title-container .icons #twitter:hover .fa-circle {
         color: #00aced; }
-    .home-page .icons #envelope:hover {
+    .title-container .icons #envelope:hover {
       cursor: pointer; }
-      .home-page .icons #envelope:hover .fa-circle {
+      .title-container .icons #envelope:hover .fa-circle {
         color: #00cc00; }
+
+.navigation-container {
+  position: fixed;
+  bottom: 20%;
+  width: 100%; }
+  .navigation-container .navigation {
+    *zoom: 1;
+    margin: 0 auto;
+    width: 250px; }
+    .navigation-container .navigation:before, .navigation-container .navigation:after {
+      content: '';
+      display: table; }
+    .navigation-container .navigation:after {
+      clear: both; }
+    .navigation-container .navigation .link {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 300;
+      cursor: pointer;
+      letter-spacing: 2px;
+      color: #b0bec5;
+      -webkit-transition: color 500ms ease;
+              transition: color 500ms ease; }
+      .navigation-container .navigation .link:hover {
+        color: #333333;
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+        direction: rtl;
+        unicode-bidi: bidi-override; }
+      .navigation-container .navigation .link.left {
+        float: left; }
+      .navigation-container .navigation .link.right {
+        float: right; }
 
 .about-me {
   clear: both;

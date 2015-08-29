@@ -1,19 +1,24 @@
 // Home
 
 .home-page {
+
+}
+
+.title-container {
     @include vertical-align();
     text-align: center;
     .landing-title {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         font-weight: 500;
         color: $black;
         letter-spacing: 1px;
         line-height: 80px;
         font-size: 60px;
+        text-align: center;
     }
     .icons {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         .fa-circle {
             color: #b0bec5;
@@ -41,6 +46,38 @@
             cursor: pointer;
             .fa-circle {
                 color: #00cc00;
+            }
+        }
+    }
+}
+
+.navigation-container {
+    position: fixed;
+    bottom: 20%;
+    width: 100%;
+    .navigation {
+        @include cf();
+        margin: 0 auto;
+        width: 250px;
+        .link {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 300;
+            cursor: pointer;
+            letter-spacing: 2px;
+            color: #b0bec5;
+            transition: color 500ms ease;
+            &:hover {
+                color: $black;
+                transform: rotate(-180deg);
+                direction: rtl;
+                unicode-bidi: bidi-override;
+            }
+            &.left {
+                float: left;
+            }
+            &.right {
+                float: right;
             }
         }
     }
