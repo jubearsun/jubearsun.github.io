@@ -10,7 +10,7 @@
     text-align: center;
     .landing-title {
         font-family: 'Pacifico', sans-serif;
-        width: 100%;
+        width: 40%;
         margin: 0 auto;
         font-weight: 500;
         color: $blue-grey;
@@ -24,7 +24,7 @@
         }
     }
     .icons {
-        width: 100%;
+        width: 40%;
         margin: 0 auto;
         a {
             text-decoration: none;
@@ -89,6 +89,28 @@
             &.right {
                 float: right;
             }
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .title-container {
+        .landing-title {
+            width: 60%;
+        }
+        .icons {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .title-container {
+        .landing-title {
+            width: 80%;
+        }
+        .icons {
+            width: 80%;
         }
     }
 }

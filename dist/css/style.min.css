@@ -563,7 +563,7 @@ body {
   text-align: center; }
   .title-container .landing-title {
     font-family: 'Pacifico', sans-serif;
-    width: 100%;
+    width: 40%;
     margin: 0 auto;
     font-weight: 500;
     color: #607D8B;
@@ -576,7 +576,7 @@ body {
       font-family: 'Roboto', sans-serif;
       font-size: 70px; }
   .title-container .icons {
-    width: 100%;
+    width: 40%;
     margin: 0 auto; }
     .title-container .icons a {
       text-decoration: none; }
@@ -635,6 +635,18 @@ body {
         float: left; }
       .navigation-container .navigation .link.right {
         float: right; }
+
+@media (max-width: 830px) {
+  .title-container .landing-title {
+    width: 60%; }
+  .title-container .icons {
+    width: 60%; } }
+
+@media (max-width: 570px) {
+  .title-container .landing-title {
+    width: 80%; }
+  .title-container .icons {
+    width: 80%; } }
 
 @media (max-width: 480px) {
   .title-container .landing-title {
