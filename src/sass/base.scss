@@ -20,7 +20,7 @@ body {
     position: relative;
     height: 100%;
     z-index: 1;
-    background: #CAE0FF;
+    background: $white;
     font-family: 'Roboto';
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 [ui-view].home.ng-enter, [ui-view].home.ng-leave {
-    background: #CAE0FF;
+    background: $white;
     position: absolute;
     left: 0;
     right: 0;
@@ -42,23 +42,23 @@ body {
 }
 
 [ui-view].home.ng-enter {
-    background: #CAE0FF;
+    background: $white;
     opacity: 0;
 }
 
 [ui-view].home.ng-enter-active {
-    background: #CAE0FF;
+    background: $white;
     opacity: 1;
 }
 
 [ui-view].home.ng-leave {
-    background: #CAE0FF;
+    background: $white;
     opacity: 1;
     z-index: 0;
 }
 
 [ui-view].home.ng-leave-active {
-    background: #CAE0FF;
+    background: $white;
     opacity: 1;
     z-index: 0;
 }
