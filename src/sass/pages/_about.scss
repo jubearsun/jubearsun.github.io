@@ -1,5 +1,81 @@
 // About page specific styles.
 .about-page {
-    box-shadow: 0px 0px 10px #AAAAAA;
+    box-shadow: 0px 0px 10px 5px #AAAAAA;
     background: $white;
+    color: #90a4ae;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    a {
+        text-decoration: none;
+        color: #e1bee7;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .close-page {
+        text-align: center;
+        height: 50px;
+        width: 60px;
+        font-size: 60px;
+        position: fixed;
+        right: 10px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+    .about-wrapper {
+        @include vertical-align();
+        @include cf();
+        margin: 0 auto;
+        width: 80%;
+        .overview-wrapper {
+            float: left;
+            display: inline-block;
+            box-shadow: 0px 0px 5px 2px #b0bec5;
+            height: 75%;
+            .profile img {
+                width: auto;
+                height: 500px;
+            }
+            .profile-text {
+                margin: 10px auto;
+                margin-left: 10px;
+                font-family: 'Roboto Slab', sans-serif;
+                font-size: 40px;
+            }
+        }
+        .info-wrapper {
+            float: left;
+            margin-left: 100px;
+            .summary {
+                line-height: 160%;
+                padding: 20px;
+                box-shadow: 0px 0px 5px 1px #b0bec5;
+                width: 650px;
+            }
+            .experience {
+                margin-top: 30px;
+                padding: 20px;
+                line-height: 160%;
+                box-shadow: 0px 0px 5px 1px #b0bec5;
+                width: 650px;
+                ul {
+                    margin-left: 20px;
+                    list-style-type: square;
+                }
+            }
+            .skills {
+                margin-top: 30px;
+                padding: 20px;
+                line-height: 160%;
+                box-shadow: 0px 0px 5px 1px #b0bec5;
+                width: 650px;
+                .skills-title {
+                    color: $blue-grey;
+                }
+                .skills-list {
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
 }

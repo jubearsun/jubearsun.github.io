@@ -472,7 +472,6 @@ td, th {
   z-index: 1; }
 
 html {
-  height: 100%;
   position: relative;
   height: 100%;
   z-index: 1; }
@@ -563,7 +562,7 @@ body {
           transform: translateY(-50%);
   text-align: center; }
   .title-container .landing-title {
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', sans-serif;
     width: 100%;
     margin: 0 auto;
     font-weight: 500;
@@ -574,7 +573,7 @@ body {
     -webkit-transition: font-size 200ms ease;
             transition: font-size 200ms ease; }
     .title-container .landing-title:hover {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-size: 70px; }
   .title-container .icons {
     width: 100%;
@@ -616,7 +615,7 @@ body {
     .navigation-container .navigation:after {
       clear: both; }
     .navigation-container .navigation .link {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       text-transform: uppercase;
       font-size: 18px;
       font-weight: 300;
@@ -647,9 +646,84 @@ body {
     width: 200px; } }
 
 .about-page {
-  -webkit-box-shadow: 0px 0px 10px #AAAAAA;
-          box-shadow: 0px 0px 10px #AAAAAA;
-  background: #FFFFFF; }
+  -webkit-box-shadow: 0px 0px 10px 5px #AAAAAA;
+          box-shadow: 0px 0px 10px 5px #AAAAAA;
+  background: #FFFFFF;
+  color: #90a4ae;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif; }
+  .about-page a {
+    text-decoration: none;
+    color: #e1bee7; }
+    .about-page a:hover {
+      text-decoration: underline; }
+  .about-page .close-page {
+    text-align: center;
+    height: 50px;
+    width: 60px;
+    font-size: 60px;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 25px; }
+  .about-page .about-wrapper {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    *zoom: 1;
+    margin: 0 auto;
+    width: 80%; }
+    .about-page .about-wrapper:before, .about-page .about-wrapper:after {
+      content: '';
+      display: table; }
+    .about-page .about-wrapper:after {
+      clear: both; }
+    .about-page .about-wrapper .overview-wrapper {
+      float: left;
+      display: inline-block;
+      -webkit-box-shadow: 0px 0px 5px 2px #b0bec5;
+              box-shadow: 0px 0px 5px 2px #b0bec5;
+      height: 75%; }
+      .about-page .about-wrapper .overview-wrapper .profile img {
+        width: auto;
+        height: 500px; }
+      .about-page .about-wrapper .overview-wrapper .profile-text {
+        margin: 10px auto;
+        margin-left: 10px;
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 40px; }
+    .about-page .about-wrapper .info-wrapper {
+      float: left;
+      margin-left: 100px; }
+      .about-page .about-wrapper .info-wrapper .summary {
+        line-height: 160%;
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
+                box-shadow: 0px 0px 5px 1px #b0bec5;
+        width: 650px; }
+      .about-page .about-wrapper .info-wrapper .experience {
+        margin-top: 30px;
+        padding: 20px;
+        line-height: 160%;
+        -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
+                box-shadow: 0px 0px 5px 1px #b0bec5;
+        width: 650px; }
+        .about-page .about-wrapper .info-wrapper .experience ul {
+          margin-left: 20px;
+          list-style-type: square; }
+      .about-page .about-wrapper .info-wrapper .skills {
+        margin-top: 30px;
+        padding: 20px;
+        line-height: 160%;
+        -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
+                box-shadow: 0px 0px 5px 1px #b0bec5;
+        width: 650px; }
+        .about-page .about-wrapper .info-wrapper .skills .skills-title {
+          color: #607D8B; }
+        .about-page .about-wrapper .info-wrapper .skills .skills-list {
+          margin-bottom: 7px; }
 
 .projects-page {
   background: #FFFFFF; }

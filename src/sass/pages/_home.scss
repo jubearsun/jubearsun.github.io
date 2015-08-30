@@ -9,7 +9,7 @@
     @include vertical-align();
     text-align: center;
     .landing-title {
-        font-family: 'Pacifico';
+        font-family: 'Pacifico', sans-serif;
         width: 100%;
         margin: 0 auto;
         font-weight: 500;
@@ -19,7 +19,7 @@
         text-align: center;
         transition: font-size 200ms ease;
         &:hover {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-size: 70px;
         }
     }
@@ -69,7 +69,7 @@
         margin: 0 auto;
         width: 250px;
         .link {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 300;

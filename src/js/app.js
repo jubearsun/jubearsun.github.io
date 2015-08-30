@@ -33,14 +33,14 @@ app.config(['$stateProvider',
                 url: '/about',
                 templateUrl: './views/about.html',
                 data: {
-                    pageTitle: 'Julia | About'
+                    pageTitle: 'Julia Sun'
                 }
             })
             .state('projects', {
                 url: '/projects',
                 templateUrl: './views/projects.html',
                 data: {
-                    pageTitle: 'Julia | Projects'
+                    pageTitle: 'Julia Sun'
                 }
             });
     }
