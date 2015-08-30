@@ -2,7 +2,7 @@
 
 .home-page {
     overflow: hidden;
-    background: #CAE0FF;
+    background: $white;
 }
 
 .title-container {
@@ -26,6 +26,9 @@
     .icons {
         width: 100%;
         margin: 0 auto;
+        a {
+            text-decoration: none;
+        }
         .fa-circle {
             color: #b0bec5;
             transition: all 300ms ease;
@@ -66,6 +69,7 @@
         margin: 0 auto;
         width: 250px;
         .link {
+            font-family: 'Roboto';
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 300;
