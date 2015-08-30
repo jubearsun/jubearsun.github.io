@@ -1,6 +1,7 @@
 var app = angular.module('julia', [
         'ui.router',
-        'ngTouch'
+        'ngTouch',
+        'ngAnimate'
     ]);
 
 app.run([

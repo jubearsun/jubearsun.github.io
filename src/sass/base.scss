@@ -17,12 +17,86 @@ html {
 }
 
 body {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    background: #CAE0FF;
+    font-family: 'Roboto';
+}
+
+.content {
     height: 100%;
     position: relative;
-    z-index: 1;
-    font-family: 'Roboto';
 }
 
 .page-container {
     height: 100%;
+}
+
+[ui-view].home.ng-enter, [ui-view].home.ng-leave {
+    background: #CAE0FF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: background 0.5s opacity 0.5s;
+}
+
+[ui-view].home.ng-enter {
+    background: #CAE0FF;
+    opacity: 0;
+}
+
+[ui-view].home.ng-enter-active {
+    background: #CAE0FF;
+    opacity: 1;
+}
+
+[ui-view].home.ng-leave {
+    background: #CAE0FF;
+    opacity: 1;
+    z-index: 0;
+}
+
+[ui-view].home.ng-leave-active {
+    background: #CAE0FF;
+    opacity: 1;
+    z-index: 0;
+}
+
+[ui-view].animate.ng-enter, [ui-view].animate.ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: top 0.5s;
+}
+
+[ui-view].animate.ng-enter {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 2;
+}
+
+[ui-view].animate.ng-enter-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+[ui-view].animate.ng-leave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+[ui-view].animate.ng-leave-active {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
 }

@@ -478,16 +478,82 @@ html {
   z-index: 1; }
 
 body {
-  height: 100%;
   position: relative;
+  height: 100%;
   z-index: 1;
+  background: #CAE0FF;
   font-family: 'Roboto'; }
+
+.content {
+  height: 100%;
+  position: relative; }
 
 .page-container {
   height: 100%; }
 
+[ui-view].home.ng-enter, [ui-view].home.ng-leave {
+  background: #CAE0FF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition: background 0.5s opacity 0.5s;
+          transition: background 0.5s opacity 0.5s; }
+
+[ui-view].home.ng-enter {
+  background: #CAE0FF;
+  opacity: 0; }
+
+[ui-view].home.ng-enter-active {
+  background: #CAE0FF;
+  opacity: 1; }
+
+[ui-view].home.ng-leave {
+  background: #CAE0FF;
+  opacity: 1;
+  z-index: 0; }
+
+[ui-view].home.ng-leave-active {
+  background: #CAE0FF;
+  opacity: 1;
+  z-index: 0; }
+
+[ui-view].animate.ng-enter, [ui-view].animate.ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition: top 0.5s;
+          transition: top 0.5s; }
+
+[ui-view].animate.ng-enter {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  z-index: 2; }
+
+[ui-view].animate.ng-enter-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+[ui-view].animate.ng-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+[ui-view].animate.ng-leave-active {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2; }
+
 .home-page {
-  overflow: hidden; }
+  overflow: hidden;
+  background: #CAE0FF; }
 
 .title-container {
   position: relative;
@@ -577,50 +643,15 @@ body {
   .navigation-container .navigation {
     width: 200px; } }
 
-.about-me {
-  clear: both;
-  width: 75%;
-  margin: 0 auto; }
-  .about-me .image {
-    border-radius: 10px;
-    border: 5px solid #e8eaf6;
-    width: 180px;
-    float: left;
-    margin-bottom: 50px;
-    z-index: 2; }
-  .about-me .description {
-    margin-left: 100px;
-    padding-left: 200px; }
-    .about-me .description .heading {
-      font-family: 'Roboto Slab'; }
-    .about-me .description .blurb {
-      font-size: 16px; }
+.about-page {
+  -webkit-box-shadow: 0px 0px 10px #AAAAAA;
+          box-shadow: 0px 0px 10px #AAAAAA;
+  background: #FFFFFF; }
+  .about-page .about-me .image {
+    width: 180px; }
 
-@media screen and (max-width: 1030px) {
-  .about-me {
-    width: 100%; } }
-
-@media screen and (max-width: 804px) {
-  .description .heading {
-    font-size: 24px; }
-  .description .subheading {
-    font-size: 18px; }
-  .description .blurb {
-    font-size: 14px; } }
-
-@media screen and (max-width: 699px) {
-  .about-me {
-    margin-bottom: 20px; }
-    .about-me .image {
-      width: 100px; }
-    .about-me .description {
-      padding-left: 50px; }
-      .about-me .description .heading {
-        font-size: 18px; }
-      .about-me .description .subheading {
-        font-size: 16px; }
-      .about-me .description .blurb {
-        font-size: 13px; } }
+.projects-page {
+  background: #FFFFFF; }
 
 
 /*# sourceMappingURL=style.min.css.map */
