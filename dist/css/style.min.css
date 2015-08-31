@@ -920,6 +920,21 @@ body {
         .about-page .about-wrapper .info-wrapper:nth-child(1n+1) {
           clear: both; } }
 
+.projects-page .projects-wrapper {
+  *zoom: 1;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 75%;
+  padding: 0 10%;
+  z-index: 1; }
+  .projects-page .projects-wrapper:before, .projects-page .projects-wrapper:after {
+    content: '';
+    display: table; }
+  .projects-page .projects-wrapper:after {
+    clear: both; }
 
 
 /*# sourceMappingURL=style.min.css.map */
