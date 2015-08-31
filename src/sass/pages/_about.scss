@@ -12,26 +12,16 @@
             text-decoration: underline;
         }
     }
-    .close-page {
-        text-align: center;
-        height: 60px;
-        width: 60px;
-        font-size: 60px;
-        position: fixed;
-        right: 10px;
-        cursor: pointer;
-        border-radius: 25px;
-    }
     .about-wrapper {
-        @include vertical-align();
         @include cf();
-        margin: 0 auto;
-        width: 80%;
+        @include vertical-align();
+        height: 75%;
+        padding: 0 10%;
+        z-index: 1;
         .overview-wrapper {
-            float: left;
-            display: inline-block;
+            @include col(1/3, 0, 2);
             box-shadow: 0px 0px 5px 2px #b0bec5;
-            height: 75%;
+            height: 100%;
             .profile {
                 height: 500px;
                 // width:
@@ -47,20 +37,19 @@
             }
         }
         .info-wrapper {
-            float: left;
-            margin-left: 100px;
+            @include col(2/3, 0, 2);
             .summary {
                 line-height: 160%;
                 padding: 20px;
                 box-shadow: 0px 0px 5px 1px #b0bec5;
-                width: 650px;
+                width: 100%;
             }
             .experience {
                 margin-top: 30px;
                 padding: 20px;
                 line-height: 160%;
                 box-shadow: 0px 0px 5px 1px #b0bec5;
-                width: 650px;
+                width: 100%;
                 ul {
                     margin-left: 20px;
                     list-style-type: square;
@@ -71,7 +60,7 @@
                 padding: 20px;
                 line-height: 160%;
                 box-shadow: 0px 0px 5px 1px #b0bec5;
-                width: 650px;
+                width: 100%;
                 .skills-title {
                     color: $blue-grey;
                 }
@@ -83,217 +72,42 @@
     }
 }
 
-@media (max-width: 1388px) {
+@media (max-width: 1280px) {
     .about-page {
         .about-wrapper {
-            .info-wrapper {
-                margin-left: 90px;
-                .summary {
-                    width: 600px;
-                }
-                .experience {
-                    width: 600px;
-                }
-                .skills {
-                    width: 600px;
-                }
-            }
+            padding: 0 5%;
         }
     }
 }
 
-@media (max-width: 1313px) {
+@media (max-width: 1080px) {
     .about-page {
         .about-wrapper {
-            width: 90%;
-        }
-    }
-}
-
-@media (max-width: 1170px) {
-    .about-page {
-        .about-wrapper {
-            .info-wrapper {
-                margin-left: 70px;
-            }
-        }
-    }
-}
-
-@media (max-width: 1145px) {
-    .about-page {
-        font-size: 20px;
-        .about-wrapper {
+            padding: 0 4%;
             .overview-wrapper {
-                .profile img {
-                    height: 450px;
-                }
+                @include col(2/5, 0, 2, 2);
             }
             .info-wrapper {
-                margin-left: 40px;
-                .skills {
-                    margin-top: 27px;
-                    .skills-list {
-                        margin-bottom: 0px;
-                    }
-                }
+                @include col(3/5, 0, 2, 2);
             }
         }
     }
 }
 
-@media (max-width: 1053px) {
+@media (max-width: 1000px) {
     .about-page {
-        .close-page {
-            right: 5px;
-        }
-    }
-}
-
-@media (max-width: 1070px) {
-    .about-page {
+        height: auto;
+        padding: 30px 20px;
         .about-wrapper {
-            width: 95%;
-        }
-    }
-}
-
-@media (max-width: 1013px) {
-    .about-page {
-        .about-wrapper {
+            @include undo-vertical-align();
+            margin-top: 70px;
             .overview-wrapper {
-                .profile img {
-                    height: 400px;
-                }
-                .profile-text {
-                    font-size: 35px;
-                }
+                @include col(1, 0, 1, 2);
+                height: 100%;
+                margin-bottom: 30px;
             }
             .info-wrapper {
-                .summary {
-                    line-height: 140%;
-                }
-                .experience {
-                    margin-top: 22px;
-                    line-height: 140%;
-                }
-                .skills {
-                    margin-top: 22px;
-                    line-height: 140%;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 975px) {
-    .about-page {
-        .about-wrapper {
-            width: 98%;
-            .overview-wrapper {
-                .profile img {
-                    height: 370px;
-                }
-            }
-            .info-wrapper {
-                .summary {
-                    padding: 15px;
-                }
-                .experience {
-                    padding: 15px;
-                }
-                .skills {
-                    padding: 15px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 924px) {
-    .about-page {
-        height: 175%;
-        font-size: 22px;
-        .close-page {
-            right: 10px;
-        }
-        .about-wrapper {
-            width: 100%;
-            text-align: center;
-            .overview-wrapper {
-                float: none;
-                .profile img {
-                    height: 500px;
-                }
-                .profile-text {
-                    text-align: left;
-                    font-size: 40px;
-                }
-            }
-            .info-wrapper {
-                float: none;
-                margin-left: 0px;
-                margin-top: 40px;
-                .summary {
-                    padding: 20px;
-                    text-align: left;
-                    margin: 30px auto;
-                }
-                .experience {
-                    padding: 20px;
-                    text-align: left;
-                    margin: 30px auto;
-                }
-                .skills {
-                    padding: 20px;
-                    text-align: left;
-                    margin: 30px auto;
-                    .skills-list {
-                        margin-bottom: 7px;
-                    }
-                }
-            }
-        }
-
-    }
-}
-
-@media (max-width: 611px) {
-    .about-page {
-        .about-wrapper {
-            .info-wrapper {
-                .summary {
-                    width: 550px;
-                }
-                .experience {
-                    width: 550px;
-                }
-                .skills {
-                    width: 550px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 569px) {
-    .about-page {
-        .about-wrapper {
-            .overview-wrapper {
-                .profile img {
-                    height: 450px;
-                }
-            }
-            .info-wrapper {
-                .summary {
-                    width: 500px;
-                }
-                .experience {
-                    width: 500px;
-                }
-                .skills {
-                    width: 500px;
-                }
+                @include col(1, 0, 1, 2);
             }
         }
     }

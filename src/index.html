@@ -30,6 +30,10 @@
 
     <body>
         <div class="content" ui-view ng-class="{ animate:$state.current.name != 'home', home:$state.current.name == 'home' }"></div>
+        <div class="close-page" ng-class="{ show:$state.current.name != 'home' }" ui-sref="home">
+            <div class="x x-1"></div>
+            <div class="x x-2"></div>
+        </div>
 
         <!-- jQuery -->
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
