@@ -626,8 +626,8 @@ body {
     line-height: 100px;
     font-size: 90px;
     text-align: center;
-    -webkit-transition: font-size 200ms ease;
-            transition: font-size 200ms ease; }
+    -webkit-transition: font-size 0.2s ease;
+            transition: font-size 0.2s ease; }
     .title-container .landing-title:hover {
       font-family: 'Roboto', sans-serif;
       font-size: 70px; }
