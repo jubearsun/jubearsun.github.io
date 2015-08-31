@@ -30,7 +30,7 @@
 
     <body>
         <div class="content" ui-view ng-class="{ animate:$state.current.name != 'home', home:$state.current.name == 'home' }"></div>
-        <div class="close-page" ng-class="{ show:$state.current.name != 'home' }" ui-sref="home">
+        <div class="close-page" ng-class="{ show:$state.current.name === 'projects' || $state.current.name === 'about' }" ui-sref="home">
             <div class="x x-1"></div>
             <div class="x x-2"></div>
         </div>
