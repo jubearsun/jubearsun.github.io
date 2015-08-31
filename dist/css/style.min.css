@@ -698,9 +698,11 @@ body {
       -webkit-box-shadow: 0px 0px 5px 2px #b0bec5;
               box-shadow: 0px 0px 5px 2px #b0bec5;
       height: 75%; }
-      .about-page .about-wrapper .overview-wrapper .profile img {
-        width: auto;
-        height: 500px; }
+      .about-page .about-wrapper .overview-wrapper .profile {
+        height: 500px;
+        position: relative;
+        background: url('../assets/img/about/prof.jpg') no-repeat center center;
+        background-size: cover; }
       .about-page .about-wrapper .overview-wrapper .profile-text {
         margin: 10px auto;
         margin-left: 10px;
