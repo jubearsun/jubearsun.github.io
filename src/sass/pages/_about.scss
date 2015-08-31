@@ -8,7 +8,6 @@
         z-index: 1;
         .overview-wrapper {
             @include col(1/3, 0, 2);
-            box-shadow: 0px 0px 5px 2px #b0bec5;
             height: 100%;
             .profile {
                 height: 500px;
@@ -26,16 +25,10 @@
         .info-wrapper {
             @include col(2/3, 0, 2);
             .summary {
-                line-height: 160%;
-                padding: 20px;
-                box-shadow: 0px 0px 5px 1px #b0bec5;
                 width: 100%;
             }
             .experience {
                 margin-top: 30px;
-                padding: 20px;
-                line-height: 160%;
-                box-shadow: 0px 0px 5px 1px #b0bec5;
                 width: 100%;
                 ul {
                     margin-left: 20px;
@@ -44,9 +37,6 @@
             }
             .skills {
                 margin-top: 30px;
-                padding: 20px;
-                line-height: 160%;
-                box-shadow: 0px 0px 5px 1px #b0bec5;
                 width: 100%;
                 .skills-title {
                     color: $blue-grey;

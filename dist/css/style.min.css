@@ -503,6 +503,18 @@ body {
     .modal a:hover {
       text-decoration: underline; }
 
+.card {
+  padding: 20px;
+  line-height: 160%; }
+
+.card-border {
+  -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
+          box-shadow: 0px 0px 5px 1px #b0bec5; }
+
+.image-card-border {
+  -webkit-box-shadow: 0px 0px 5px 2px #b0bec5;
+          box-shadow: 0px 0px 5px 2px #b0bec5; }
+
 .close-page {
   border-radius: 50%;
   background-clip: padding-box;
@@ -739,8 +751,6 @@ body {
     width: 31.33333%;
     margin-left: 0%;
     margin-right: 3%;
-    -webkit-box-shadow: 0px 0px 5px 2px #b0bec5;
-            box-shadow: 0px 0px 5px 2px #b0bec5;
     height: 100%; }
     .about-page .about-wrapper .overview-wrapper:before, .about-page .about-wrapper .overview-wrapper:after {
       content: '';
@@ -781,27 +791,15 @@ body {
     .about-page .about-wrapper .info-wrapper:nth-child(2n+1) {
       clear: both; }
     .about-page .about-wrapper .info-wrapper .summary {
-      line-height: 160%;
-      padding: 20px;
-      -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
-              box-shadow: 0px 0px 5px 1px #b0bec5;
       width: 100%; }
     .about-page .about-wrapper .info-wrapper .experience {
       margin-top: 30px;
-      padding: 20px;
-      line-height: 160%;
-      -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
-              box-shadow: 0px 0px 5px 1px #b0bec5;
       width: 100%; }
       .about-page .about-wrapper .info-wrapper .experience ul {
         margin-left: 20px;
         list-style-type: square; }
     .about-page .about-wrapper .info-wrapper .skills {
       margin-top: 30px;
-      padding: 20px;
-      line-height: 160%;
-      -webkit-box-shadow: 0px 0px 5px 1px #b0bec5;
-              box-shadow: 0px 0px 5px 1px #b0bec5;
       width: 100%; }
       .about-page .about-wrapper .info-wrapper .skills .skills-title {
         color: #607D8B; }
