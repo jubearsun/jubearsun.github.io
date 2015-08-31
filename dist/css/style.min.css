@@ -706,10 +706,13 @@ body {
 
 @media (max-width: 480px) {
   .title-container .landing-title {
+    width: 100%;
     line-height: 90px;
     font-size: 80px; }
     .title-container .landing-title:hover {
       font-size: 60px; }
+  .title-container .icons {
+    width: 100%; }
   .navigation-container .navigation {
     width: 200px; } }
 

@@ -118,11 +118,15 @@
 @media (max-width: 480px) {
     .title-container {
         .landing-title {
+            width: 100%;
             line-height: 90px;
             font-size: 80px;
             &:hover {
                 font-size: 60px;
             }
+        }
+        .icons {
+            width: 100%;
         }
     }
     .navigation-container {
