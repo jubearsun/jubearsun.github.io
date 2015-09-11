@@ -735,7 +735,6 @@ body {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 75%;
   padding: 0 10%;
   z-index: 1; }
   .about-page .about-wrapper:before, .about-page .about-wrapper:after {
@@ -750,8 +749,7 @@ body {
     text-align: inherit;
     width: 31.33333%;
     margin-left: 0%;
-    margin-right: 3%;
-    height: 100%; }
+    margin-right: 3%; }
     .about-page .about-wrapper .overview-wrapper:before, .about-page .about-wrapper .overview-wrapper:after {
       content: '';
       display: table; }
@@ -768,8 +766,8 @@ body {
       background: url('../assets/img/about/prof.jpg') no-repeat center center;
       background-size: cover; }
     .about-page .about-wrapper .overview-wrapper .profile-text {
-      margin: 10px auto;
-      margin-left: 10px;
+      margin: 15px auto;
+      margin-left: 15px;
       font-family: 'Roboto Slab', sans-serif;
       font-size: 40px; }
   .about-page .about-wrapper .info-wrapper {
