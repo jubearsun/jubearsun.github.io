@@ -33,13 +33,6 @@ body {
     height: 100%;
 }
 
-.page-wrapper {
-    @include cf();
-    @include vertical-align();
-    padding: 0 10%;
-    z-index: 1;
-}
-
 .modal {
     box-shadow: 0px 0px 10px 5px #AAAAAA;
     background: $white;

@@ -1,10 +1,16 @@
 // Projects
 .projects-page {
-    .page-wrapper {
+    .projects-wrapper {
+        @include cf();
+        @include vertical-align();
+        padding: 0 10%;
+        z-index: 1;
         .projects {
             .image {
-                height: 500px;
-                background-size: cover;
+                height: 300px;
+                width: 700px;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         }
     }
