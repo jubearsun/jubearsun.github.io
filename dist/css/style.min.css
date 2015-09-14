@@ -491,6 +491,21 @@ body {
 .page-container {
   height: 100%; }
 
+.page-wrapper {
+  *zoom: 1;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 10%;
+  z-index: 1; }
+  .page-wrapper:before, .page-wrapper:after {
+    content: '';
+    display: table; }
+  .page-wrapper:after {
+    clear: both; }
+
 .modal {
   -webkit-box-shadow: 0px 0px 10px 5px #AAAAAA;
           box-shadow: 0px 0px 10px 5px #AAAAAA;
@@ -729,81 +744,67 @@ body {
   .navigation-container .navigation {
     width: 200px; } }
 
-.about-page .about-wrapper {
+.about-page .page-wrapper .overview-wrapper {
   *zoom: 1;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 0 10%;
-  z-index: 1; }
-  .about-page .about-wrapper:before, .about-page .about-wrapper:after {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .about-page .page-wrapper .overview-wrapper:before, .about-page .page-wrapper .overview-wrapper:after {
     content: '';
     display: table; }
-  .about-page .about-wrapper:after {
+  .about-page .page-wrapper .overview-wrapper:after {
     clear: both; }
-  .about-page .about-wrapper .overview-wrapper {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 31.33333%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .about-page .about-wrapper .overview-wrapper:before, .about-page .about-wrapper .overview-wrapper:after {
-      content: '';
-      display: table; }
-    .about-page .about-wrapper .overview-wrapper:after {
-      clear: both; }
-    .about-page .about-wrapper .overview-wrapper:nth-child(2n) {
-      margin-right: 0%;
-      float: right; }
-    .about-page .about-wrapper .overview-wrapper:nth-child(2n+1) {
-      clear: both; }
-    .about-page .about-wrapper .overview-wrapper .profile {
-      height: 500px;
-      position: relative;
-      background: url('../assets/img/about/prof.jpg') no-repeat center center;
-      background-size: cover; }
-    .about-page .about-wrapper .overview-wrapper .profile-text {
-      margin: 15px auto;
-      margin-left: 15px;
-      font-family: 'Roboto Slab', sans-serif;
-      font-size: 40px; }
-  .about-page .about-wrapper .info-wrapper {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 65.66667%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .about-page .about-wrapper .info-wrapper:before, .about-page .about-wrapper .info-wrapper:after {
-      content: '';
-      display: table; }
-    .about-page .about-wrapper .info-wrapper:after {
-      clear: both; }
-    .about-page .about-wrapper .info-wrapper:nth-child(2n) {
-      margin-right: 0%;
-      float: right; }
-    .about-page .about-wrapper .info-wrapper:nth-child(2n+1) {
-      clear: both; }
-    .about-page .about-wrapper .info-wrapper .summary {
-      width: 100%; }
-    .about-page .about-wrapper .info-wrapper .experience {
-      margin-top: 30px;
-      width: 100%; }
-      .about-page .about-wrapper .info-wrapper .experience ul {
-        margin-left: 20px;
-        list-style-type: square; }
-    .about-page .about-wrapper .info-wrapper .skills {
-      margin-top: 30px;
-      width: 100%; }
-      .about-page .about-wrapper .info-wrapper .skills .skills-title {
-        color: #607D8B; }
-      .about-page .about-wrapper .info-wrapper .skills .skills-list {
-        margin-bottom: 7px; }
+  .about-page .page-wrapper .overview-wrapper:nth-child(2n) {
+    margin-right: 0%;
+    float: right; }
+  .about-page .page-wrapper .overview-wrapper:nth-child(2n+1) {
+    clear: both; }
+  .about-page .page-wrapper .overview-wrapper .profile {
+    height: 500px;
+    position: relative;
+    background: url('../assets/img/about/prof.jpg') no-repeat center center;
+    background-size: cover; }
+  .about-page .page-wrapper .overview-wrapper .profile-text {
+    margin: 15px auto;
+    margin-left: 15px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px; }
+.about-page .page-wrapper .info-wrapper {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .about-page .page-wrapper .info-wrapper:before, .about-page .page-wrapper .info-wrapper:after {
+    content: '';
+    display: table; }
+  .about-page .page-wrapper .info-wrapper:after {
+    clear: both; }
+  .about-page .page-wrapper .info-wrapper:nth-child(2n) {
+    margin-right: 0%;
+    float: right; }
+  .about-page .page-wrapper .info-wrapper:nth-child(2n+1) {
+    clear: both; }
+  .about-page .page-wrapper .info-wrapper .summary {
+    width: 100%; }
+  .about-page .page-wrapper .info-wrapper .experience {
+    margin-top: 30px;
+    width: 100%; }
+    .about-page .page-wrapper .info-wrapper .experience ul {
+      margin-left: 20px;
+      list-style-type: square; }
+  .about-page .page-wrapper .info-wrapper .skills {
+    margin-top: 30px;
+    width: 100%; }
+    .about-page .page-wrapper .info-wrapper .skills .skills-title {
+      color: #607D8B; }
+    .about-page .page-wrapper .info-wrapper .skills .skills-list {
+      margin-bottom: 7px; }
 
 @media (max-width: 1280px) {
   .about-page .about-wrapper {
@@ -919,21 +920,9 @@ body {
         .about-page .about-wrapper .info-wrapper:nth-child(1n+1) {
           clear: both; } }
 
-.projects-page .projects-wrapper {
-  *zoom: 1;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 75%;
-  padding: 0 10%;
-  z-index: 1; }
-  .projects-page .projects-wrapper:before, .projects-page .projects-wrapper:after {
-    content: '';
-    display: table; }
-  .projects-page .projects-wrapper:after {
-    clear: both; }
+.projects-page .page-wrapper .projects .image {
+  height: 500px;
+  background-size: cover; }
 
 
 /*# sourceMappingURL=style.min.css.map */

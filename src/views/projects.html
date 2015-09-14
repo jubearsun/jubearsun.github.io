@@ -1,5 +1,13 @@
 <div class="page-container projects-page modal" ng-controller="projectsCtrl">
-    <div class="projects-wrapper">
-        Projects Page
+    <div class="page-wrapper">
+        <div class="title">
+            {{ title }}
+        </div>
+        <div class="projects" ng-repeat="project in projects track by $index">
+            <div class="image" ng-style="{'background':'url({{ project.preview }}) no-repeat'}"></div>
+            <div class="title">
+                {{ project.title }}
+            </div>
+        </div>
     </div>
 </div>

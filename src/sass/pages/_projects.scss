@@ -1,10 +1,11 @@
 // Projects
 .projects-page {
-    .projects-wrapper {
-        @include cf();
-        @include vertical-align();
-        height: 75%;
-        padding: 0 10%;
-        z-index: 1;
+    .page-wrapper {
+        .projects {
+            .image {
+                height: 500px;
+                background-size: cover;
+            }
+        }
     }
 }
