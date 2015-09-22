@@ -481,8 +481,7 @@ body {
   height: 100%;
   z-index: 1;
   background: #FFFFFF;
-  font-family: 'Roboto';
-  overflow: hidden; }
+  font-family: 'Roboto'; }
 
 .content {
   height: 100%;
