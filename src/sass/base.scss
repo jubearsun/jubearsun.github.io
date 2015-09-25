@@ -21,7 +21,6 @@ body {
     z-index: 1;
     background: $white;
     font-family: 'Roboto';
-    overflow: hidden;
 }
 
 .content {
@@ -140,6 +139,7 @@ body {
 }
 
 [ui-view].animate.ng-enter {
+    overflow: hidden;
     position: absolute;
     top: 100%;
     left: 0;
@@ -150,6 +150,7 @@ body {
 }
 
 [ui-view].animate.ng-enter-active {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -157,6 +158,7 @@ body {
 }
 
 [ui-view].animate.ng-leave {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -164,6 +166,7 @@ body {
 }
 
 [ui-view].animate.ng-leave-active {
+    overflow: hidden;
     position: absolute;
     top: 100%;
     left: 0;

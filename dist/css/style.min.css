@@ -481,8 +481,7 @@ body {
   height: 100%;
   z-index: 1;
   background: #FFFFFF;
-  font-family: 'Roboto';
-  overflow: hidden; }
+  font-family: 'Roboto'; }
 
 .content {
   height: 100%;
@@ -593,6 +592,7 @@ body {
           transition: top 0.5s; }
 
 [ui-view].animate.ng-enter {
+  overflow: hidden;
   position: absolute;
   top: 100%;
   left: 0;
@@ -602,18 +602,21 @@ body {
   z-index: 2; }
 
 [ui-view].animate.ng-enter-active {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
 
 [ui-view].animate.ng-leave {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
 
 [ui-view].animate.ng-leave-active {
+  overflow: hidden;
   position: absolute;
   top: 100%;
   left: 0;
