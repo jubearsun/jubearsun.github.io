@@ -592,6 +592,7 @@ body {
           transition: top 0.5s; }
 
 [ui-view].animate.ng-enter {
+  overflow: hidden;
   position: absolute;
   top: 100%;
   left: 0;
@@ -601,18 +602,21 @@ body {
   z-index: 2; }
 
 [ui-view].animate.ng-enter-active {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
 
 [ui-view].animate.ng-leave {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
 
 [ui-view].animate.ng-leave-active {
+  overflow: hidden;
   position: absolute;
   top: 100%;
   left: 0;
@@ -925,7 +929,6 @@ body {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 75%;
   padding: 0 10%;
   z-index: 1; }
   .projects-page .projects-wrapper:before, .projects-page .projects-wrapper:after {
@@ -933,6 +936,11 @@ body {
     display: table; }
   .projects-page .projects-wrapper:after {
     clear: both; }
+  .projects-page .projects-wrapper .projects .image {
+    height: 450px;
+    width: 500px;
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 
 /*# sourceMappingURL=style.min.css.map */
