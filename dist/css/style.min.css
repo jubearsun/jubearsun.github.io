@@ -898,6 +898,9 @@ body {
           float: right; }
         .about-page .about-wrapper .overview-wrapper:nth-child(1n+1) {
           clear: both; }
+        .about-page .about-wrapper .overview-wrapper .profile {
+          height: 850px;
+          background-position: center top; }
       .about-page .about-wrapper .info-wrapper {
         *zoom: 1;
         float: left;
@@ -970,8 +973,8 @@ body {
       left: 0;
       background: #333333;
       opacity: 0.8;
-      -webkit-transition: opacity 300ms;
-              transition: opacity 300ms; }
+      -webkit-transition: opacity 500ms;
+              transition: opacity 500ms; }
     .projects-page .projects-wrapper .project .title {
       text-align: center;
       position: absolute;
@@ -987,6 +990,39 @@ body {
       opacity: 0; }
     .projects-page .projects-wrapper .project:hover .title {
       display: none; }
+
+@media (max-width: 800px) {
+  .projects-page {
+    height: auto; }
+    .projects-page .projects-wrapper {
+      position: relative;
+      top: 0;
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+              transform: translateY(0); }
+      .projects-page .projects-wrapper .project {
+        *zoom: 1;
+        float: left;
+        clear: none;
+        text-align: inherit;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 3%; }
+        .projects-page .projects-wrapper .project:before, .projects-page .projects-wrapper .project:after {
+          content: '';
+          display: table; }
+        .projects-page .projects-wrapper .project:after {
+          clear: both; }
+        .projects-page .projects-wrapper .project:nth-child(2n) {
+          margin-right: 3%;
+          float: left; }
+        .projects-page .projects-wrapper .project:nth-child(2n+1) {
+          clear: none; }
+        .projects-page .projects-wrapper .project:nth-child(1n) {
+          margin-right: 0%;
+          float: right; }
+        .projects-page .projects-wrapper .project:nth-child(1n+1) {
+          clear: both; } }
 
 
 /*# sourceMappingURL=style.min.css.map */

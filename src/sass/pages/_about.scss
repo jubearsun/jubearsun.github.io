@@ -80,6 +80,10 @@
                 @include col(1, 0, 1, 2);
                 height: 100%;
                 margin-bottom: 30px;
+                .profile {
+                    height: 850px;
+                    background-position: center top;
+                }
             }
             .info-wrapper {
                 @include col(1, 0, 1, 2);
