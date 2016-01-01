@@ -7,7 +7,7 @@
         z-index: 1;
         .project {
             @include col(1/2, 0, 2);
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             cursor: pointer;
             .preview {
                 position: relative;
