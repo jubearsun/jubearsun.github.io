@@ -2,7 +2,48 @@
 .projects-page {
     .projects-wrapper {
         @include cf();
-        padding: 5%;
+        @include vertical-align();
+        padding: 40px;
         z-index: 1;
+        .project {
+            @include col(1/2, 0, 2);
+            margin-bottom: 10px;
+            cursor: pointer;
+            .preview {
+                position: relative;
+                height: 300px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .overlay {
+                position: absolute;
+                height: 300px;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: $black;
+                opacity: 0.8;
+                transition: opacity 300ms;
+            }
+            .title {
+                text-align: center;
+                position: absolute;
+                color: #fff;
+                top: 50%;
+                font-size: 2rem;
+                transform: translate(0, -50%);
+                width: 100%;
+                z-index: 3;
+            }
+            &:hover {
+                .overlay {
+                    opacity: 0;
+                }
+                .title {
+                    display: none;
+                }
+            }
+        }
     }
 }
