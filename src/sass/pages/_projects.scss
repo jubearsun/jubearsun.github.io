@@ -1,4 +1,3 @@
-// Projects
 .projects-page {
     .projects-wrapper {
         @include cf();
@@ -27,6 +26,7 @@
                 transition: opacity 500ms;
             }
             .title {
+                padding: 5px;
                 text-align: center;
                 position: absolute;
                 color: #fff;
