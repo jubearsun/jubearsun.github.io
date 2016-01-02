@@ -1,4 +1,3 @@
-// Projects
 .projects-page {
     .projects-wrapper {
         @include cf();
@@ -24,9 +23,10 @@
                 left: 0;
                 background: $black;
                 opacity: 0.8;
-                transition: opacity 300ms;
+                transition: opacity 500ms;
             }
             .title {
+                padding: 5px;
                 text-align: center;
                 position: absolute;
                 color: #fff;
@@ -43,6 +43,18 @@
                 .title {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .projects-page {
+        height: auto;
+        .projects-wrapper {
+            @include undo-vertical-align();
+            .project {
+                @include col(1, 0, 1, 2);
             }
         }
     }
