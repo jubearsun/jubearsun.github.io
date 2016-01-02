@@ -1,3 +1,57 @@
-<div class="page-container dw-page project-description">
-    device wall description here
+<div class="page-container dw-page project-description" ng-controller="dwCtrl">
+    <div class="back-wrapper">
+        <div class="arrow" ui-sref="projects">
+            <div class="bar bar-left"></div>
+            <div class="bar bar-right"></div>
+        </div>
+    <div class="back" ui-sref="projects">back to projects</div>
+    </div>
+    <div class="header card-border">
+        <div class="header-img"></div>
+    </div>
+    <div class="title">{{ title }}</div>
+    <div class="technologies">Technologies: iOS (Objective-C), Android, HTML/CSS/JavaScript, Google App Engine</div>
+    <div class="intro">
+        In the summer of 2015 I had the opportunity to intern on the <a href="https://developers.google.com/admob/" target="new">AdMob</a> team at Google.  My intern project was to design, implement and deliver a framework to streamline manual testing of display ads.  The project was dubbed "Device Wall" because the vision was to have a "wall", or group of Android and iOS devices, that are all able to render and display the same ad sent out by the tester.  I divided the project into three parts, detailed below.
+    </div>
+    <div class="structure">
+        <div class="section">
+            <div class="section-title">Commander App</div>
+            <div class="description" id="cmd">
+                The commander app is the remote control for the device wall.  It can send command requests to the server, add a wall to the server, or select an existing wall from the server to command.  For example, the person using the commander app can specify that they want a banner or interstitial ad, and those ad requests will be sent to the server.  Other command requests include orientation, reset, and update. One can simulate rotation on the device to see what an ad will look like when the device is rotated, or send a reset command to reset all the devices on the wall, and even upload APK or IPA packages to update the client apps on the devices.
+            </div>
+            <div class="image-wrapper">
+                <div class="img image-card-border" ng-repeat="image in images track by $index">
+                    <div class="commander-img" style="background-image:url('{{ image }}')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Client App</div>
+            <div class="description">
+                The client app is the app installed on both Android and iOS devices on the wall that displays the ads and command requests sent from the commander app.  It continually polls the server for incoming commands and then executes them.  When no ads are displayed on it and it is ready to broadcast a command, the app displays a green "ready" screen with the current wall name.  The client app can also switch walls and receive only commands made to that specific wall.
+            </div>
+            <div class="device-wall">
+                <div class="img image-card-border"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Server</div>
+            <div class="description">
+                The server is the middle man between the client and commander apps.  It receives command requests from the commander app and sends it to the client apps that are on the wall specified by the commander app.  It also acts as what I call "Device Wall Management" by storing all the wall names.
+            </div>
+        </div>
+    </div>
+    <div class="subtitle">Conclusion</div>
+    <div class="conclusion">
+        I touched upon a lot of technologies in this internship and I also had a lot of fun!  Since the minimum viable product was completed before the end of the summer, I tackled a web app for the commander app (originally, it was supposed to be a mobile app) and also implemented "test case facilitation" in which pre-made tests could be broadcasted sequentially to the wall, instead of the tester having to manually type in parameters.  Thank you Google for the opportunity and the great first internship!
+    </div>
+    <div class="subtitle">Takeaways</div>
+    <ul class="takeaways">
+        <li>Learned how API calls work</li>
+        <li>Design docs are tedious, but necessary</li>
+        <li>Huge nested JSON objects are a pain to parse</li>
+        <li>Objective-C is preferable to Java</li>
+        <li><a href="http://www.getmdl.io/" target="new">MDL</a> is pretty awesome</li>
+    </div>
 </div>
