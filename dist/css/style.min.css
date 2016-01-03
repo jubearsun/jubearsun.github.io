@@ -547,6 +547,8 @@ body {
     @media (max-width: 400px) {
       .project-description .back-wrapper {
         margin-bottom: 0px; } }
+  .project-description .header {
+    text-align: center; }
   .project-description .title {
     margin: 40px 0;
     font-size: 40px; }
@@ -1098,12 +1100,10 @@ body {
         .projects-page .projects-wrapper .project:nth-child(1n+1) {
           clear: both; } }
 
-.dw-page .header {
-  text-align: center; }
-  .dw-page .header .header-img {
-    background: url('../assets/img/projects/device-wall/header.png') no-repeat center center;
-    background-size: contain;
-    height: 450px; }
+.dw-page .header .header-img {
+  background: url('../assets/img/projects/device-wall/header.png') no-repeat center center;
+  background-size: contain;
+  height: 450px; }
 .dw-page .structure .section {
   margin-top: 20px; }
   .dw-page .structure .section .section-title {
@@ -1184,6 +1184,11 @@ body {
     .dw-page .header .header-img {
       height: 300px;
       background-size: cover; } }
+
+.personal-page .header .header-img {
+  background: url('../assets/img/projects/personal/preview.png') no-repeat center center;
+  background-size: contain;
+  height: 450px; }
 
 
 /*# sourceMappingURL=style.min.css.map */

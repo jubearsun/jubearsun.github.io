@@ -1,3 +1,29 @@
-<div class="page-container personal-page project-description">
-    personal iteration description here
+<div class="page-container personal-page project-description" ng-controller="personalCtrl">
+    <div class="back-wrapper">
+        <div class="arrow" ui-sref="projects">
+            <div class="bar bar-left"></div>
+            <div class="bar bar-right"></div>
+        </div>
+    <div class="back" ui-sref="projects">back to projects</div>
+    </div>
+    <div class="header card-border">
+        <div class="header-img"></div>
+    </div>
+    <div class="title">{{ title }}</div>
+    <div class="technologies">Technologies: AngularJS</div>
+    <div class="intro">
+        During summer of 2015 I had some free time and decided I was going to rebuild my website.  My old site was thrown together in about four days from bootstrap templates and I built it when I had only a very basic working knowledge of HTML/CSS and no JavaScript experience.  I remember going back to it after a semester and not even wanting to work on it/make it better because the code was so bad.  Thus, I decided to create this site!
+    </div>
+    <div class="subtitle">Conclusion</div>
+    <div class="conclusion">
+        I had a lot of fun building my site and I hope you enjoy it!
+    </div>
+    <div class="subtitle">Takeaways</div>
+    <ul class="takeaways">
+        <li>Learned how to do basic page animations</li>
+        <li>Got familiarized with MVC</li>
+        <li>Drawing arrows and x's is perplexing</li>
+        <li>But making things yourself is actually really fun</li>
+        <li>Never going back to bootstrap</li>
+    </ul>
 </div>
