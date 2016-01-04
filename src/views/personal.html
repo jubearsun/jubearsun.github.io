@@ -1,3 +1,37 @@
-<div class="page-container personal-page project-description">
-    personal iteration description here
+<div class="page-container personal-page project-description" ng-controller="personalCtrl">
+    <div class="back-wrapper">
+        <div class="arrow" ui-sref="projects">
+            <div class="bar bar-left"></div>
+            <div class="bar bar-right"></div>
+        </div>
+    <div class="back" ui-sref="projects">back to projects</div>
+    </div>
+    <div class="header card-border">
+        <div class="header-img"></div>
+    </div>
+    <div class="title">{{ title }}</div>
+    <div class="technologies">Technologies: AngularJS</div>
+    <div class="intro">
+        During summer of 2015 I had some free time and decided I was going to rebuild my website.  My old site was thrown together in about four days from bootstrap templates and I built it when I had only a very basic working knowledge of HTML/CSS and no JavaScript experience.  I remember going back to it after a semester and not even wanting to work on it/make it better because the code was so bad.  Thus, I decided to create this site!
+    </div>
+    <div class="specifics">
+        <div class="subsubtitle">Page Animations</div>
+        <div class="description">I didn't want a single page scroller like my old website.  At the same time, I wanted to learn how to animate page transitions, so I decided to go with pages that would slide up and slide down when opened/closed.</div>
+        <div class="animate-example card-border"></div>
+        <div class="subsubtitle">Content</div>
+        <div class="description">I made this website (1) for myself because I wanted to familiarize myself with the MVC model and get better at web design (2) to showcase to others what I can do.  I wanted something that people would look at and say, "this feels very you."  I made sure to include quirks about me in my bio so visitors get a sense of who I am as a person, and design pages that are simple yet fun to exemplify what I can do as a growing developer.  I'm proud to present the finished product, so I hope you enjoy it!</div>
+        <div class="image-wrapper">
+            <div class="about-image card-border"></div>
+            <div class="works-image card-border"></div>
+        </div>
+        <div class="afterthought">P.S. I really love mouseover effects if that wasn't apparent already.</div>
+        <div class="icons-example card-border"></div>
+    </div>
+    <div class="subtitle">Takeaways</div>
+    <ul class="takeaways">
+        <li>Page animations...why didn't I try them earlier?</li>
+        <li>Drawing arrows and x's is perplexing</li>
+        <li>But making things yourself is actually really fun</li>
+        <li>Never going back to bootstrap</li>
+    </ul>
 </div>
