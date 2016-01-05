@@ -1107,7 +1107,10 @@ body {
           margin-right: 0%;
           float: right; }
         .projects-page .projects-wrapper .project:nth-child(1n+1) {
-          clear: both; } }
+          clear: both; }
+        .projects-page .projects-wrapper .project.top.first {
+          margin-top: 30px;
+          margin-bottom: 0px; } }
 
 .dw-page .header .header-img {
   background: url('../assets/img/projects/device-wall/header.png') no-repeat center center;

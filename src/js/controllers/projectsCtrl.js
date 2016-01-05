@@ -4,7 +4,7 @@ app.controller('projectsCtrl', ['$scope', function($scope) {
             title: 'Device Wall',
             preview: '../assets/img/projects/device-wall/preview.png',
             link: 'dw',
-            location: 'top'
+            location: 'top first'
         },
         {
             title: 'Personal Site Iteration',
