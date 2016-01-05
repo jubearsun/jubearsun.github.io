@@ -2,7 +2,7 @@
     .projects-wrapper {
         @include cf();
         @include vertical-align();
-        padding: 5%;
+        padding: 0 5%;
         z-index: 1;
         .project {
             @include col(1/2, 0, 2);
