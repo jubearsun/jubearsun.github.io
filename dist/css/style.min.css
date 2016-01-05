@@ -1011,7 +1011,7 @@ body {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  padding: 0 5%;
+  padding: 5%;
   z-index: 1; }
   .projects-page .projects-wrapper:before, .projects-page .projects-wrapper:after {
     content: '';
