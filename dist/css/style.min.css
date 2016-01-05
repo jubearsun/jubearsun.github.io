@@ -1040,13 +1040,13 @@ body {
       clear: both; }
     .projects-page .projects-wrapper .project .preview {
       position: relative;
-      height: 300px;
+      height: 275px;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
     .projects-page .projects-wrapper .project .overlay {
       position: absolute;
-      height: 300px;
+      height: 275px;
       width: 100%;
       top: 0;
       left: 0;
