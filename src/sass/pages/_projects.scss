@@ -1,4 +1,5 @@
 .projects-page {
+    overflow: hidden;
     .projects-wrapper {
         @include cf();
         @include vertical-align();
