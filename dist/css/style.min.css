@@ -474,8 +474,7 @@ td, th {
 html {
   position: relative;
   height: 100%;
-  z-index: 1;
-  overflow-y: scroll; }
+  z-index: 1; }
 
 body {
   position: relative;
