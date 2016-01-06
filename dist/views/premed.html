@@ -1,3 +1,79 @@
-<div class="page-container premed-page project-description">
-    premed description here
+<div class="page-container premed-page project-description" ng-controller="premedCtrl">
+    <div class="back-wrapper">
+        <div class="arrow" ui-sref="projects">
+            <div class="bar bar-left"></div>
+            <div class="bar bar-right"></div>
+        </div>
+        <div class="back" ui-sref="projects">back to projects</div>
+    </div>
+    <div class="header card-border">
+        <a href="http://rocky-sands-3716.herokuapp.com/" target="_blank"><div class="header-img" target="new"></div></a>
+    </div>
+    <div class="title">{{ title }}</div>
+    <div class="technologies">Technologies: MeteorJS</div>
+    <div class="intro">
+        Part of what <a href="http://innovativedesign.club/" target="_blank">Innovative Design</a>, the club I'm in at school, does is design work for other organizations on campus.  Premed at Berkeley is an organization that compiles resources for students hoping to go to medical school.  I was assigned to do front end work on premed as most of back end had been completed the previous semester.  My job was to essentially recreate the mockups given to us by our two designers.
+    </div>
+    <div class="structure">
+        <div class="subsubtitle">Project Structure and Vendors</div>
+        <div class="description">I started off by deleting all the old front-end code from the previous semester and redoing the structure of the app.  I had started using <a href="{{ scss }}" target="_blank">sass</a> in my <a href="" ui-sref="{{ previous }}">previous project</a> so I also included it in this project.  I also decided to try a new grid system called <a href="{{ toast }}" target="_blank">Toast</a> so I included it in the project too.</div>
+        <pre class="block"><code class="code">/.meteor
+    release, versions, packages
+/client
+    /lib
+        routes.js
+    /stylesheets
+        /sass
+            /components
+            /pages
+                *page specific styles*
+            /vendors
+                normalize.scss
+                toast.scss
+        base.scss
+        index.scss
+        mixins.scss
+        variables.scss
+    /views
+        *html and js files*
+/public
+    /fonts
+    /img
+/server
+    server.js
+.gitignore
+scss.json
+README.md</code></pre>
+        <div class="subsubtitle">Page Styles</div>
+        <div class="description">
+            I noticed that a lot of the pages had similar styles, so I wrote code for these styles in <i>base.scss</i>.  This way, my team members could just reuse these styles to maintain consistency across the site.
+        </div>
+        <div class="image-wrapper">
+            <div class="image card-border" ng-repeat="mockup in mockups track by $index">
+                <div class="mockup-image" style="background-image:url('{{ mockup }}')"></div>
+            </div>
+        </div>
+        <div class="subsubtitle">Components</div>
+        After restructuring the app and writing the base styles, I worked on the following features:
+        <ul>
+            <li>Navbar (routing, responsiveness)</li>
+            <li>Footer</li>
+            <li>Home (landing image/text)</li>
+            <li>Filling out About, Advising, MCAT pages</li>
+        </ul>
+    </div>
+    <div class="subtitle">Conclusion</div>
+    <div class="conclusion">This was my first time using MeteorJS, but due to my previous experience with AngularJS it was very easy to pick up.  I also got to enhance my very rusty JavaScript skills that I picked up over the summer at my internship and got a chance to work with other team members/designers.  It was fun and I learned a lot!</div>
+    <div class="subtitle">Takeaways</div>
+    <ul class="takeaways">
+        <li>Meteor is SO SLOW</li>
+        <li>Routing to a subsection of a page in Meteor required way too much hacky JavaScript</li>
+        <li>Structuring an app makes me feel so powerful >:]</li>
+        <li>Some features on mockups wouldn't be plausible in actual implementation</li>
+        <li>Oops Meteor doesn't work on Safari</li>
+        <li>Probably never using Meteor again</li>
+    </ul>
+    <div class="epilogue">
+        <a href="{{ demo }}" target="_blank">Check it out live</a> or <a href="{{ github }}" target="_blank">view the source code</a>.
+    </div>
 </div>
