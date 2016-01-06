@@ -1,0 +1,40 @@
+.photo-page {
+    .header {
+        transition: opacity 250ms;
+        .header-img {
+            padding: 20px;
+            background: url('../assets/img/projects/photo-portfolio/header.png') no-repeat center top;
+            background-size: cover;
+            height: 450px;
+            @media (max-width: 640px) {
+                height: 300px;
+            }
+            @media (max-width: 480px) {
+                height: 250px;
+            }
+        }
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+    .gif-wrapper {
+        margin-top: 20px;
+        @include cf();
+        .gif {
+            @include col(1/2, 0, 2);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            @media (max-width: 880px) {
+                margin-bottom: 30px;
+                @include col(1, 0, 1, 2);
+            }
+            @media (max-width: 600px) {
+                height: 250px;
+                background-size: contain;
+            }
+        }
+    }
+}

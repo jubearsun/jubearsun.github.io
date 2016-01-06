@@ -1425,5 +1425,82 @@ body {
         .premed-page .structure .image-wrapper .image:nth-child(1n+1) {
           clear: both; } }
 
+.photo-page .header {
+  -webkit-transition: opacity 250ms;
+          transition: opacity 250ms; }
+  .photo-page .header .header-img {
+    padding: 20px;
+    background: url('../assets/img/projects/photo-portfolio/header.png') no-repeat center top;
+    background-size: cover;
+    height: 450px; }
+    @media (max-width: 640px) {
+      .photo-page .header .header-img {
+        height: 300px; } }
+    @media (max-width: 480px) {
+      .photo-page .header .header-img {
+        height: 250px; } }
+  .photo-page .header:hover {
+    opacity: 0.6;
+    cursor: pointer; }
+.photo-page .gif-wrapper {
+  margin-top: 20px;
+  *zoom: 1; }
+  .photo-page .gif-wrapper:before, .photo-page .gif-wrapper:after {
+    content: '';
+    display: table; }
+  .photo-page .gif-wrapper:after {
+    clear: both; }
+  .photo-page .gif-wrapper .gif {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .photo-page .gif-wrapper .gif:before, .photo-page .gif-wrapper .gif:after {
+      content: '';
+      display: table; }
+    .photo-page .gif-wrapper .gif:after {
+      clear: both; }
+    .photo-page .gif-wrapper .gif:nth-child(2n) {
+      margin-right: 0%;
+      float: right; }
+    .photo-page .gif-wrapper .gif:nth-child(2n+1) {
+      clear: both; }
+    @media (max-width: 880px) {
+      .photo-page .gif-wrapper .gif {
+        margin-bottom: 30px;
+        *zoom: 1;
+        float: left;
+        clear: none;
+        text-align: inherit;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 3%; }
+        .photo-page .gif-wrapper .gif:before, .photo-page .gif-wrapper .gif:after {
+          content: '';
+          display: table; }
+        .photo-page .gif-wrapper .gif:after {
+          clear: both; }
+        .photo-page .gif-wrapper .gif:nth-child(2n) {
+          margin-right: 3%;
+          float: left; }
+        .photo-page .gif-wrapper .gif:nth-child(2n+1) {
+          clear: none; }
+        .photo-page .gif-wrapper .gif:nth-child(1n) {
+          margin-right: 0%;
+          float: right; }
+        .photo-page .gif-wrapper .gif:nth-child(1n+1) {
+          clear: both; } }
+    @media (max-width: 600px) {
+      .photo-page .gif-wrapper .gif {
+        height: 250px;
+        background-size: contain; } }
+
 
 /*# sourceMappingURL=style.min.css.map */
