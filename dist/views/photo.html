@@ -1,3 +1,38 @@
-<div class="page-container photo-page project-description">
-    photo description here
+<div class="page-container photo-page project-description" ng-controller="photoCtrl">
+    <div class="back-wrapper">
+        <div class="arrow" ui-sref="projects">
+            <div class="bar bar-left"></div>
+            <div class="bar bar-right"></div>
+        </div>
+        <div class="back" ui-sref="projects">back to projects</div>
+    </div>
+    <div class="header card-border">
+        <a href="{{ demo }}" target="_blank"><div class="header-img"></div></a>
+    </div>
+    <div class="title">{{ title }}</div>
+    <div class="technologies">Technologies: AngularJS</div>
+    <div class="intro">
+        I joined <a href="http://innovativedesign.club" target="_blank">Innovative Design</a> in the spring of 2015 on the web exploration tier, a tier designed to newcomers to web dev the basics of web development.  I previously had only basic HTML/CSS knowledge from my days of playing <a href="http://www.neopets.com/" target="_blank">Neopets</a> and designing page layouts for myself but looking back, I actually knew very little about web design/development.  I honestly thought web was just HTML/CSS/JavaScript and static pages (I know, I was a noob).  Over the course of the semester I brushed up on my HTML/CSS skills, learned <a href="{{ scss }}" target="_blank">sass</a> and how to properly use git, and made lots of new friends.  At the end of the semester our final project was to create a portfolio for the graphic design/photo tiers in the club using AngularJS.
+    </div>
+    <div class="specifics">
+        <div class="subsubtitle">Home Page</div>
+        <div class="description">Since there were nine members in the tier I was making a portfolio for, I wanted to make grid of their pictures and have each grid be a link to a short blurb about a specific member and their work.  Back then, I actually struggled to get the mouseover effect because I didn't know how to make a proper overlay.  I also had a really had time understanding <a href="{{ jeet }}" target="_blank">Jeet's API</a> so making the grid was also a struggle!</div>
+        <div class="subsubtitle">Individual Pages</div>
+        <div class="description">I decided to use a carousel to display each member's works.  Using <a href="{{ carousel }}">this library</a> and a very simple JavaScript function, one can click on the diamonds at the bottom of the carousel to jump to a particular image.  This was actually my first time touching JavaScript and I was pretty proud of myself.</div>
+    </div>
+    <div class="gif-wrapper">
+        <div class="gif card-border" ng-repeat="gif in gifs track by $index" style="background-image:url('{{ gif }}')"></div>
+    </div>
+    <div class="subtitle">Conclusion</div>
+    <div class="conclusion">This was my first time using a JavaScript framework, ever.  And also probably the first time I made a web page from start to finish.  I had a lot of fun my first semester in Innovative Design and my tier leader and fellow members were super awesome!  Check out the members' works <a href="{{ exploration }}" target="_blank">here</a> (warning: not responsive, so full screen your browser).</div>
+    <div class="subtitle">Takeaways</div>
+    <ul class="takeaways">
+        <li><a href="{{ gulp }}" target="_blank">Gulp</a> is awesome!</li>
+        <li>Being able to finish something (even if it's simple) is so satisfying</li>
+        <li>Wow people are really good at photography</li>
+        <li>Learning together is so much more fun than learning on your own</li>
+    </ul>
+    <div class="epilogue">
+        <a href="{{ demo }}" target="_blank">View this live</a> or <a href="{{ github }}" target="_blank">check out the source code</a>.
+    </div>
 </div>
