@@ -36,7 +36,7 @@ body {
 .modal {
     box-shadow: 0px 0px 10px 5px #AAAAAA;
     background: $white;
-    color: $light-purple;
+    color: $grey;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
     a {
@@ -51,7 +51,7 @@ body {
 .project-description {
     padding: 10px 7% 30px 7%;
     height: auto;
-    color: $light-purple;
+    color: $grey;
     font-size: 22px;
     line-height: 2rem;
     .back-wrapper {
@@ -89,9 +89,6 @@ body {
         @media (max-width: 670px) {
             margin-bottom: 10px;
         }
-        @media (max-width: 400px) {
-            margin-bottom: 0px;
-        }
     }
     .header {
         text-align: center;
@@ -120,9 +117,12 @@ body {
             text-decoration: underline;
         }
     }
-    ul.takeaways {
+    ul {
         margin-left: 20px;
         list-style-type: square;
+    }
+    .epilogue {
+        margin-top: 15px;
     }
     @media (max-width: 600px) {
         font-size: 20px;
