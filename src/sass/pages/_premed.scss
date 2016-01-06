@@ -1,0 +1,14 @@
+.premed-page {
+    .header {
+        transition: opacity 250ms;
+        .header-img {
+            background: url('../assets/img/projects/premed/header.png') no-repeat center center;
+            background-size: contain;
+            height: 450px;
+        }
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+}
