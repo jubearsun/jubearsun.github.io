@@ -49,7 +49,7 @@ body {
 }
 
 .project-description {
-    padding: 10px 7% 30px 7%;
+    padding: 10px 7% 10px 7%;
     height: auto;
     color: $grey;
     font-size: 22px;
@@ -75,6 +75,42 @@ body {
                 &.bar-right {
                     left: 18px;
                     transform: rotate(30deg);
+                }
+            }
+        }
+        .back {
+            color: $blue-grey;
+            text-align: center;
+        }
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        @media (max-width: 670px) {
+            margin-bottom: 10px;
+        }
+    }
+    .back-wrapper-bottom {
+        margin-top: 20px;
+        transition: opacity 200ms;
+        div.arrow {
+            position: relative;
+            margin: 0 auto;
+            padding: 12px 0;
+            width: 40px;
+            div.bar {
+                position: absolute;
+                width: 24px;
+                height: 4px;
+                background-color: $blue-grey;
+                transition: transform 200ms;
+                &.bar-left {
+                    left: 0px;
+                    transform: rotate(30deg);
+                }
+                &.bar-right {
+                    left: 18px;
+                    transform: rotate(-30deg);
                 }
             }
         }
