@@ -505,7 +505,7 @@ body {
       text-decoration: underline; }
 
 .project-description {
-  padding: 10px 7% 30px 7%;
+  padding: 10px 7% 10px 7%;
   height: auto;
   color: #90a4ae;
   font-size: 22px;
@@ -544,6 +544,41 @@ body {
       cursor: pointer; }
     @media (max-width: 670px) {
       .project-description .back-wrapper {
+        margin-bottom: 10px; } }
+  .project-description .back-wrapper-bottom {
+    margin-top: 20px;
+    -webkit-transition: opacity 200ms;
+            transition: opacity 200ms; }
+    .project-description .back-wrapper-bottom div.arrow {
+      position: relative;
+      margin: 0 auto;
+      padding: 12px 0;
+      width: 40px; }
+      .project-description .back-wrapper-bottom div.arrow div.bar {
+        position: absolute;
+        width: 24px;
+        height: 4px;
+        background-color: #607D8B;
+        -webkit-transition: -webkit-transform 200ms;
+                transition: transform 200ms; }
+        .project-description .back-wrapper-bottom div.arrow div.bar.bar-left {
+          left: 0px;
+          -webkit-transform: rotate(30deg);
+              -ms-transform: rotate(30deg);
+                  transform: rotate(30deg); }
+        .project-description .back-wrapper-bottom div.arrow div.bar.bar-right {
+          left: 18px;
+          -webkit-transform: rotate(-30deg);
+              -ms-transform: rotate(-30deg);
+                  transform: rotate(-30deg); }
+    .project-description .back-wrapper-bottom .back {
+      color: #607D8B;
+      text-align: center; }
+    .project-description .back-wrapper-bottom:hover {
+      opacity: 0.7;
+      cursor: pointer; }
+    @media (max-width: 670px) {
+      .project-description .back-wrapper-bottom {
         margin-bottom: 10px; } }
   .project-description .header {
     text-align: center; }
