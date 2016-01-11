@@ -1,7 +1,7 @@
-# Website Concept for juliasun.io
+# My Personal Website
 
-Currently located at [juliasun.herokuapp.com](https://juliasun.herokuapp.com)
+Check it out at [juliasun.io](http://juliasun.io/).
 
 #### Credits:
 
-Angular Boilerplate by Christian Le - [https://github.com/cle1994/boilerplate-angular](https://github.com/cle1994/boilerplate-angular)
+[Angular Boilerplate by Christian Le](https://github.com/cle1994/boilerplate-angular)
