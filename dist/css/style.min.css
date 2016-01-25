@@ -736,6 +736,7 @@ body {
   background: #FFFFFF; }
 
 .title-container {
+  position: fixed;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);

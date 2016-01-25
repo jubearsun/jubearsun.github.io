@@ -4,6 +4,7 @@
 }
 
 .title-container {
+    position: fixed;
     @include vertical-align();
     text-align: center;
     .landing-title {
