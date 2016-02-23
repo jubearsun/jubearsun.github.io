@@ -1,7 +1,7 @@
 app.controller('premedCtrl', ['$scope', function($scope) {
     $scope.title = 'Premed at Berkeley';
 
-    $scope.demo = 'http://rocky-sands-3716.herokuapp.com/';
+    $scope.demo = 'http://premedatberkeley.herokuapp.com/';
 
     $scope.toast = 'https://daneden.github.io/Toast/';
 
